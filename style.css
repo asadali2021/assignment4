@@ -1,0 +1,198 @@
+#logo{
+    width: 60px;
+    height: 60px;
+}
+.nav-link{
+    color: #1976D2 !important;
+   
+}
+.Vision,.Mission{
+    width: 520px;
+    max-width: 520px;
+    height: auto;
+    padding-bottom: 30px;
+    /* max-height: 525px; */
+    background-color: #FAFAFA;
+    box-shadow: 4px 8px 10px grey;
+    margin-bottom:20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /* margin-top: 10px; */
+} 
+#V , #EV , #M , #Mi{
+    color: #1976D2;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+     margin: 40px 20px 20px 15px; 
+     font-size: 24px;
+}
+#EV , #Mi{
+    word-spacing: 8px;
+}
+#Mi{
+    word-spacing: 6px !important;
+}
+#M, #V{
+    font-size: 40px;
+}
+.VnM{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.services{
+    background-color: #FAFAFA;
+    box-shadow: 2px 4px 8px 10px grey;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    color: #1976D2;
+    line-height: 60px; 
+    display: flex;
+     justify-content: center; 
+    /* align-items: center;  */
+    text-align: center;  
+}
+#items{
+    line-height: 60px;
+    word-spacing: 9px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+#serve{
+    position: relative;
+    top: -60px;
+}
+.apple{
+    margin-top: 110px; 
+    
+}
+.questions{
+    background-color: #FAFAFA;
+    box-shadow: 2px 4px 8px 10px grey;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    /* display: flex; */
+    justify-content: center; 
+    /* align-items: center;  */
+    /* text-align: center;  */
+}
+#quest{
+    color: #1976D2;
+    text-align: center; 
+    /* margin-top: 60px; */
+    margin-right: 20px;
+    position: relative;
+    top: 60px;
+}
+#good{
+    list-style:  circle;
+}
+.c{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+}
+.c1, .c2, .c3{
+    background-color: #FAFAFA;
+    box-shadow: 2px 4px 8px 10px grey;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    color: #1976D2;
+    width: 250px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+.card-body{
+    color: #1976D2;
+}
+.fa-headphones{
+    font-size: 34px !important;
+    color: #1976D2;
+}
+.fa-clock-o{
+    font-size: 34px !important;
+    color: #1976D2;
+}
+.fa-calendar{
+    font-size: 34px !important;
+    color: #1976D2;
+}
+.move{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.foot{
+    color: #1976D2;
+    background-color: #FAFAFA;
+    /* box-shadow: 2px 4px 8px 10px grey; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+    margin-top: 120px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.a{
+    margin-right: 350px;
+    margin-left: 100px;
+}
+.b{
+    margin-left: 100px;
+}
+#ema{
+    margin-right: 10px;
+}
+#emspace{
+    word-spacing: 10px;
+}
+#tweet{
+    position: relative;
+    left: 18px;
+}
+#insta{
+    position: relative;
+    left: 32px;
+}
+#yt{
+    position: relative;
+    left: 22px;
+}
+#top{
+    opacity: 0.5;
+    position: fixed;
+    right: 15px;
+    top: 290px;
+}
+#top:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
