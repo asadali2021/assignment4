@@ -89,14 +89,15 @@ h5{
     margin-bottom: 40px;
     padding-bottom: 40px;
     padding-top: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px;  */
     height: auto;
+    width: 95%;
     color: #1976D2;
 }
 #cont{
     margin-left: 40px;
-    margin-right: 30px;
+    margin-right: 30px;  
 }
 
 /* #top{
@@ -126,11 +127,15 @@ h5{
 }
 #data{
     position: relative;
-    left: 60px;
+    left: 0px;
     top: 20px;
 }
+#le{
+    margin-left: 20px;
+    text-align: left;
+}
 .co{
-    width: auto;
+    width: 95%;
     height: auto;
     /* max-width: 450px; */
     background-color: #FAFAFA;
@@ -199,18 +204,21 @@ input.password{
 }
 textarea.details{
     color: #1976D2;
+    margin-left: 90px;
 }
 input:focous{
     border-color: royalblue;
 }
 .su{
     padding: 10px;
-    margin: 5px;
-    font-size: 1em;
+    margin: 10px;
+    font-size: 18px;
     border: none;
     background-color: royalblue;
     color: white;
     border-radius: 5px;
+    margin-left: 120px;
+    width: 150px;
 }
 .fly{
     margin-right: 40px;
@@ -406,3 +414,29 @@ input:focous{
       flex-wrap: wrap;
       margin-top: 30px;
   }
+   #good{
+      width: 1000px;
+      height: 600px;
+  } 
+  @media only screen and (max-width:480px){
+      #good{
+          width: 10px;
+          height: 80px;
+          margin-left: 80px;
+      }
+    }
+    @media only screen and (max-width:375px){
+        good{
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+        }
+    }
+    @media only screen and (max-width:600px){
+        #good{
+            width: 480px;
+            height: 480px;
+           
+        }
+    
+    }

@@ -21,9 +21,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="img4.png" type="image/x-icon">
+    <style>
+            /* Center the loader */
+            #loader {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 1;
+              width: 150px;
+              height: 150px;
+              margin: -75px 0 0 -75px;
+              border: 16px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 16px solid #3498db;
+              width: 120px;
+              height: 120px;
+              -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+            }
+            
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+            }
+            
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            
+            /* Add animation to "page content" */
+            .animate-bottom {
+              position: relative;
+              -webkit-animation-name: animatebottom;
+              -webkit-animation-duration: 1s;
+              animation-name: animatebottom;
+              animation-duration: 1s
+            }
+            
+            @-webkit-keyframes animatebottom {
+              from { bottom:-100px; opacity:0 } 
+              to { bottom:0px; opacity:1 }
+            }
+            
+            @keyframes animatebottom { 
+              from{ bottom:-100px; opacity:0 } 
+              to{ bottom:0; opacity:1 }
+            }
+            
+            #myDiv {
+              display: none;
+              text-align: center;
+            }
+            </style>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"> <img src="img4.png" title="Multi-Engineering Solutions"  alt="MES" id="logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -74,7 +129,7 @@
         </div>
     </nav>
     <div id="test">
-        <h3 id="fire">OUR TESTIMONIALS</h3>
+        <h3 id="fire" style="text-align: left;">OUR TESTIMONIALS</h3>
         <h5 id="water">We are thankful for all of our awesome testimonials. There are hundreds of MES's happy
             customers!</h5>
 
@@ -84,8 +139,8 @@
             <div class="card">
                 <img src="jacket.png" class="card-img-top" alt="Man">
                 <div class="card-body">
-                    <h5 class="card-title"><q class="qot">Phenomenal team!</q></h5>
-                    <p class="card-text">They have got my project on time amoung the competetion.
+                    <h5 class="card-title"><q class="qot" style="text-align: left;">Phenomenal team!</q></h5>
+                    <p class="card-text" style="text-align: left;">They have got my project on time amoung the competetion.
                         They represents a highly skilled, experienced and professional team.
                     </p>
                 </div>
@@ -98,8 +153,8 @@
             <div class="card">
                 <img src="jacket.png" class="card-img-top" alt="Man">
                 <div class="card-body">
-                    <h5 class="card-title"><q class="qot">Remarkable Services!</q></h5>
-                    <p class="card-text">They have got my project on time amoung the competetion.
+                    <h5 class="card-title"><q class="qot" style="text-align: left;">Remarkable Services!</q></h5>
+                    <p class="card-text" style="text-align: left;">They have got my project on time amoung the competetion.
                         They represents a highly skilled, experienced and professional team.
                     </p>
                 </div>
@@ -112,8 +167,8 @@
             <div class="card">
                 <img src="jacket.png" class="card-img-top" alt="Man">
                 <div class="card-body">
-                    <h5 class="card-title"><q class="qot">Wonderful Support!</q></h5>
-                    <p class="card-text">They have got my project on time amoung the competetion.
+                    <h5 class="card-title"><q class="qot" style="text-align: left;">Wonderful Support!</q></h5>
+                    <p class="card-text" style="text-align: left;">They have got my project on time amoung the competetion.
                         They represents a highly skilled, experienced and professional team.</p>
                 </div>
                 <div class="card-footer">
@@ -129,8 +184,8 @@
             <div class="card">
                 <img src="jacket.png" class="card-img-top" alt="Man">
                 <div class="card-body">
-                    <h5 class="card-title"><q class="qot">Astounding Management!</q></h5>
-                    <p class="card-text">The way they come up with variety of ideas is astonishing.
+                    <h5 class="card-title"><q class="qot" style="text-align: left;">Astounding Management!</q></h5>
+                    <p class="card-text" style="text-align:left;">The way they come up with variety of ideas is astonishing.
                             They represents a highly skilled, experienced and professional team.</p>
                 </div>
                 <div class="card-footer">
@@ -142,8 +197,8 @@
             <div class="card">
                 <img src="jacket.png" class="card-img-top" alt="Man">
                 <div class="card-body">
-                    <h5 class="card-title"><q class="qot">True Definition Of Credibility!</q></h5>
-                    <p class="card-text">They have got my project on time amoung the competetion.
+                    <h5 class="card-title"><q class="qot" style="text-align: left;">True Definition Of Credibility!</q></h5>
+                    <p class="card-text" style="text-align: left;">They have got my project on time amoung the competetion.
                             They represents a highly skilled, experienced and professional team.
                     </p>
                 </div>
@@ -156,8 +211,8 @@
             <div class="card">
                 <img src="jacket.png" class="card-img-top" alt="Man">
                 <div class="card-body">
-                    <h5 class="card-title"><q class="qot">Profound Ethics!</q></h5>
-                    <p class="card-text">They have got my project on time amoung the competetion.
+                    <h5 class="card-title"><q class="qot" style="text-align: left;">Profound Ethics!</q></h5>
+                    <p class="card-text" style="text-align: left;">They have got my project on time amoung the competetion.
                         They represents a highly skilled, experienced and professional team.</p>
                 </div>
                 <div class="card-footer">
@@ -185,8 +240,8 @@
     <div class="foot">
         <!-- <footer> -->
         <div class="a">
-            <h3>Mail Us :</h3>
-            <p><img src="mailll.png" alt="Mail" width="20px" height="20px" id="ema"><a
+            <h3 style="text-align: left;">Mail Us :</h3>
+            <p style="text-align: left;"><img src="mailll.png" alt="Mail" width="20px" height="20px" id="ema"><a
                     href="mailto:asadalif13@gmail.com" target="_blank">asadalif13@gmail.com</a></p>
             <p id="emspace">Created by : Syed Asad Ali | All rights reserved. | Copyrights &copy; 2020</p>
         </div>
@@ -206,6 +261,20 @@
         <!-- </footer> -->
     </div>
     <a href="#" id="scroll-to-top"><img src="top.png" id="top" width="40" height="40"></a>
+    </div>
+    <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 2000);
+            }
+            
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
+            
 </body>
 
 </html>

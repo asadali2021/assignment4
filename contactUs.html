@@ -21,9 +21,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="img4.png" type="image/x-icon">
+    <style>
+            /* Center the loader */
+            #loader {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 1;
+              width: 150px;
+              height: 150px;
+              margin: -75px 0 0 -75px;
+              border: 16px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 16px solid #3498db;
+              width: 120px;
+              height: 120px;
+              -webkit-animation: spin 2s linear infinite;
+              animation: spin 2s linear infinite;
+            }
+            
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+            }
+            
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            
+            /* Add animation to "page content" */
+            .animate-bottom {
+              position: relative;
+              -webkit-animation-name: animatebottom;
+              -webkit-animation-duration: 1s;
+              animation-name: animatebottom;
+              animation-duration: 1s
+            }
+            
+            @-webkit-keyframes animatebottom {
+              from { bottom:-100px; opacity:0 } 
+              to { bottom:0px; opacity:1 }
+            }
+            
+            @keyframes animatebottom { 
+              from{ bottom:-100px; opacity:0 } 
+              to{ bottom:0; opacity:1 }
+            }
+            
+            #myDiv {
+              display: none;
+              text-align: center;
+            }
+            </style>
 </head>
 
-<body id="wid">
+<body id="wid" onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"> <img src="img4.png" title="Multi-Engineering Solutions"  alt="MES" id="logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -74,10 +129,10 @@
         </div>
     </nav>
     <div class="main">
-        <div class="contact">
+        <div class="contact" id="le">
             <h3 id="cont">Feel Free To Contact Us (Time : 9:00 A.M - 10:00 A.M & 5:00 P.M - 8:00 P.M)</h3>
         </div>
-        <br> <br>
+        <br> 
         <div class="contact">
             <h3 id="discuss">You can discuss your projects with us. Send us complete information
                 and your ideas. Just click below ;</h3>
@@ -126,9 +181,9 @@
             <address>
                 <div class="addres">
                     <h5>Address: A-xyz, Sector-xyz, xyzplace , Karachi, Pakistan</h5>
-                    <img src=" ph.png" alt="icon" width="40px" height="40px"> <span id="aug">0900-78601</span> <br />
-                    <img src="mailll.png" alt="E-mail" width="40px" height="40px"><a href="https://mail.google.com"
-                        target="_blank" id="dec" mailto:asadalif13@gmail.com>asadalif13@gmail.com</a>
+                    <p style="text-align: left;"><img src=" ph.png" alt="icon" width="40px" height="40px"> <span id="aug">0900-78601</span></p>
+                   <p style="text-align: left;"> <img src="mailll.png" alt="E-mail" width="40px" height="40px"><a href="https://mail.google.com"
+                        target="_blank" id="dec" mailto:asadalif13@gmail.com>asadalif13@gmail.com</a></p>
                 </div>
             </address>
         </div>
@@ -138,12 +193,12 @@
         <div class="fram">
             <iframe id="good"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462116.668388142!2d66.87526986938377!3d25.19355992680479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1590257919932!5m2!1sen!2s"
-                width="auto" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                 frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" 
                 tabindex="0"></iframe>
         </div>
         <br>
-        <div class="marqueo">
-            <marquee behavior="responsive" direction="up" scrollamount="4"><span>Every client we work with becomes a
+        <!-- <div class="marqueo">
+            <marquee direction="up" scrollamount="4"><span>Every client we work with becomes a
                     part of our family, and when need us, will be there for new
                     projects, updated user needs, troubleshooting, and growing in new directions.Feedback survey &
                     maintenance of discussions where applicable. An open door for anything the customer likes to discuss
@@ -154,7 +209,7 @@
                     maintenance of discussions where applicable. An open door for anything the customer likes to discuss
                     for
                     the future.</span></marquee>
-        </div>
+        </div> -->
     </div>
     <div class="move">
         <nav aria-label="Page navigation example">
@@ -173,8 +228,8 @@
     <div class="foot">
         <!-- <footer> -->
         <div class="a">
-            <h3>Mail Us :</h3>
-            <p><img src="mailll.png" alt="Mail" width="20px" height="20px" id="ema"><a
+            <h3 style="text-align: left;">Mail Us :</h3>
+            <p style="text-align: left;"><img src="mailll.png" alt="Mail" width="20px" height="20px" id="ema"><a
                     href="mailto:asadalif13@gmail.com" target="_blank">asadalif13@gmail.com</a></p>
             <p id="emspace">Created by : Syed Asad Ali | All rights reserved. | Copyrights &copy; 2020</p>
         </div>
@@ -194,6 +249,19 @@
         <!-- </footer> -->
     </div>
     <a href="#" id="scroll-to-top"><img src="top.png" id="top" width="40" height="40"></a>
+    </div>
+    <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 2000);
+            }
+            
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
 </body>
 
 </html>
